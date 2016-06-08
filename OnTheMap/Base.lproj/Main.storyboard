@@ -38,10 +38,16 @@
                                 <rect key="frame" x="20" y="439" width="560" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="HQ8-zH-Sh6" eventType="touchUpInside" id="9ob-g2-8qM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW6-ip-jTU">
                                 <rect key="frame" x="20" y="482" width="560" height="30"/>
                                 <state key="normal" title="Don't have an account? Sign Up"/>
+                                <connections>
+                                    <action selector="signUpAction:" destination="HQ8-zH-Sh6" eventType="touchUpInside" id="0QN-hB-1kH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eax-JG-bur">
                                 <rect key="frame" x="20" y="535" width="560" height="30"/>
@@ -49,6 +55,9 @@
                                 <state key="normal" title="Login With Facebook">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginWithFacebook:" destination="HQ8-zH-Sh6" eventType="touchUpInside" id="F8w-Vv-K6k"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qzu-9V-xRB">
                                 <rect key="frame" x="20" y="73" width="560" height="210"/>
@@ -87,6 +96,10 @@
                             <constraint firstItem="365-EE-vXn" firstAttribute="top" secondItem="wn3-9P-Go5" secondAttribute="bottom" constant="19" id="z2p-W5-TcJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="eS3-80-dOa" id="qJp-4E-TzQ"/>
+                        <outlet property="usernameTextField" destination="365-EE-vXn" id="lvJ-VR-AKU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDO-X5-8N1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
