@@ -17,8 +17,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+    // textField delegate
+    var textDelegate: CredentialsTextFieldDelegate!
+    
+    // Lifecycle functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textDelegate = CredentialsTextFieldDelegate(screenView: view)
+        
+        usernameTextField.delegate = textDelegate
+        passwordTextField.delegate = textDelegate
     }
     
     
@@ -43,6 +53,20 @@ class LoginViewController: UIViewController {
     // Sign up on the Udacity registration site
     @IBAction func signUpAction(sender: AnyObject) {
         
+    }
+    
+    // MARK: -
+    // MARK: Private functions
+    
+    // verify if all fields are filled in to do the login
+    private func verifyFields() -> Bool {
+        return !(usernameTextField.text!.isEmpty) && !(passwordTextField.text!.isEmpty)
+    }
+    
+    // show alert with custom message
+    private func showAlertWith(message: String!) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
     }
 
 }

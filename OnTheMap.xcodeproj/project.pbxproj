@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1336577B1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336577A1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift */; };
 		13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */; };
 		13FB0AC21D08AE4B00EF37A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */; };
 		13FB0AC41D08AE4B00EF37A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1336577A1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsTextFieldDelegate.swift; sourceTree = "<group>"; };
 		13FB0AB91D08AE4B00EF37A1 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13FB0AC11D08AE4B00EF37A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */,
 				13FB0ACE1D08B2B600EF37A1 /* LoginViewController.swift */,
+				1336577A1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift */,
 				13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */,
 				13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */,
 				13FB0AC51D08AE4B00EF37A1 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				13FB0ACF1D08B2B600EF37A1 /* LoginViewController.swift in Sources */,
 				13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */,
+				1336577B1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				13FB0ACD1D08AE4B00EF37A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
