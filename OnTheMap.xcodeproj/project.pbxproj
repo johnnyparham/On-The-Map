@@ -11,6 +11,7 @@
 		1336577D1D0B2FE90000B83D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1336577C1D0B2FE90000B83D /* FBSDKCoreKit.framework */; };
 		1336577F1D0B30170000B83D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1336577E1D0B30170000B83D /* FBSDKLoginKit.framework */; };
 		133657811D0B30280000B83D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133657801D0B30280000B83D /* FBSDKShareKit.framework */; };
+		133657841D0B4C240000B83D /* ConnectionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657831D0B4C240000B83D /* ConnectionClient.swift */; };
 		13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */; };
 		13FB0AC21D08AE4B00EF37A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */; };
 		13FB0AC41D08AE4B00EF37A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		1336577E1D0B30170000B83D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		133657801D0B30280000B83D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		133657821D0B39E20000B83D /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		133657831D0B4C240000B83D /* ConnectionClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionClient.swift; sourceTree = "<group>"; };
 		13FB0AB91D08AE4B00EF37A1 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13FB0AC11D08AE4B00EF37A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		13FB0ABB1D08AE4B00EF37A1 /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
+				133657831D0B4C240000B83D /* ConnectionClient.swift */,
 				13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */,
 				13FB0ACE1D08B2B600EF37A1 /* LoginViewController.swift */,
 				1336577A1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133657841D0B4C240000B83D /* ConnectionClient.swift in Sources */,
 				13FB0ACF1D08B2B600EF37A1 /* LoginViewController.swift in Sources */,
 				13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */,
 				1336577B1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift in Sources */,
