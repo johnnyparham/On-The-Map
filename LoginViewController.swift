@@ -53,6 +53,7 @@ class LoginViewController: UIViewController {
     // Sign up on the Udacity registration site
     @IBAction func signUpAction(sender: AnyObject) {
         
+        
     }
     
     // MARK: -

@@ -13,10 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    // For facebook login, this will return to the app after the user valider it's credentials
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?,annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            application,
+            openURL: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
+
     }
 
     func applicationWillResignActive(application: UIApplication) {
