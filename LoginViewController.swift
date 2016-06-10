@@ -10,8 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    // MARK: -
-    // MARK: Components
+    //MARK: -
+    //MARK: Components
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -32,8 +32,8 @@ class LoginViewController: UIViewController {
     }
     
     
-    // MARK: -
-    // MARK: Action Functions
+    //MARK: -
+    //MARK: Action Functions
     
     // Login using the Udacity API
     @IBAction func loginAction(sender: AnyObject) {
@@ -56,8 +56,8 @@ class LoginViewController: UIViewController {
         
     }
     
-    // MARK: -
-    // MARK: Private functions
+    //MARK: -
+    //MARK: Private functions
     
     // verify if all fields are filled in to do the login
     private func verifyFields() -> Bool {

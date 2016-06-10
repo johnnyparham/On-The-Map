@@ -33,8 +33,8 @@ class ConnectionClient: NSObject {
         super.init()
     }
     
-    // MARK: -
-    // MARK: POST Method
+    //MARK: -
+    //MARK: POST Method
     func doPOSTWithMethod(method: String!, ofBaseUrl baseUrl: String!, withRequestContent content: [String:String], andWithBody body: String!, isFromUdacity isUdacity: Bool?, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let urlString = baseUrl + method
@@ -77,8 +77,8 @@ class ConnectionClient: NSObject {
         }.resume()
     }
     
-    // MARK: -
-    // MARK: GET Method
+    //MARK: -
+    //MARK: GET Method
     func doGETWithMethod(method: String!, ofBaseUrl baseUrl: String!, withRequestContent content: [String:String], isFromUdacity isUdacity: Bool?, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let urlString = baseUrl + method
@@ -118,8 +118,8 @@ class ConnectionClient: NSObject {
         }.resume()
     }
     
-    // MARK: -
-    // MARK: DELETE Method
+    //MARK: -
+    //MARK: DELETE Method
     func doDELETEWithMethod(method: String!, ofBaseUrl baseUrl: String!, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let urlString = baseUrl + method
