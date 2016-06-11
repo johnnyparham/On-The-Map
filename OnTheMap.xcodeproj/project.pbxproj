@@ -13,6 +13,8 @@
 		133657811D0B30280000B83D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133657801D0B30280000B83D /* FBSDKShareKit.framework */; };
 		133657841D0B4C240000B83D /* ConnectionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657831D0B4C240000B83D /* ConnectionClient.swift */; };
 		133657861D0B5EA30000B83D /* ConnectionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657851D0B5EA30000B83D /* ConnectionConstants.swift */; };
+		133657881D0B69560000B83D /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657871D0B69560000B83D /* LoadingDialog.swift */; };
+		1336578A1D0B85250000B83D /* ConnectionUdacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657891D0B85250000B83D /* ConnectionUdacity.swift */; };
 		13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */; };
 		13FB0AC21D08AE4B00EF37A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */; };
 		13FB0AC41D08AE4B00EF37A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		133657821D0B39E20000B83D /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		133657831D0B4C240000B83D /* ConnectionClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionClient.swift; sourceTree = "<group>"; };
 		133657851D0B5EA30000B83D /* ConnectionConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionConstants.swift; sourceTree = "<group>"; };
+		133657871D0B69560000B83D /* LoadingDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
+		133657891D0B85250000B83D /* ConnectionUdacity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionUdacity.swift; sourceTree = "<group>"; };
 		13FB0AB91D08AE4B00EF37A1 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13FB0AC11D08AE4B00EF37A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */,
 				13FB0AC51D08AE4B00EF37A1 /* LaunchScreen.storyboard */,
 				13FB0AC81D08AE4B00EF37A1 /* Info.plist */,
+				133657871D0B69560000B83D /* LoadingDialog.swift */,
+				133657891D0B85250000B83D /* ConnectionUdacity.swift */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 				133657841D0B4C240000B83D /* ConnectionClient.swift in Sources */,
 				13FB0ACF1D08B2B600EF37A1 /* LoginViewController.swift in Sources */,
 				13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */,
+				1336578A1D0B85250000B83D /* ConnectionUdacity.swift in Sources */,
 				133657861D0B5EA30000B83D /* ConnectionConstants.swift in Sources */,
+				133657881D0B69560000B83D /* LoadingDialog.swift in Sources */,
 				1336577B1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

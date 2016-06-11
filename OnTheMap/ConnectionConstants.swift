@@ -23,6 +23,10 @@ extension ConnectionClient {
         static let RegistrationUrl: String = "https://www.udacity.com/account/auth#!/signin"
         
         //MARK: Methods
+        static let SessionMethod: String = "/session"
+        static let UsersMethod: String = "/users"
+        
+        //MARK: Udacity information
         static let RequestParamAccept = "Accept"
         static let RequestParamContentType = "Content-Type"
         static let ContentJSON = "application/json"

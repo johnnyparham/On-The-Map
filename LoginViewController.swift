@@ -16,6 +16,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    // loading dialog
+    var loadingDialog = LoadingDialog()
     
     // textField delegate
     var textDelegate: CredentialsTextFieldDelegate!
@@ -38,8 +40,16 @@ class LoginViewController: UIViewController {
     // Login using the Udacity API
     @IBAction func loginAction(sender: AnyObject) {
         
+        if ( verifyFields() ) {
+            loadingDialog.showLoading(view)
+            
+            ConnectionClient.sharedInstance().udacityLogin(usernameTextField.text, password: passwordTextField.text) { (result, error) in
+                self.handleLoginResult(ConnectionClient.UdacityAPI.LoginUdacity, result: result, error: error)
+            }
+        } else {
+            showAlertWith("All fields must be completed")
+        }
     }
-    
     
     
     // Login using the Facebook API
@@ -52,7 +62,8 @@ class LoginViewController: UIViewController {
     
     // Sign up on the Udacity registration site
     @IBAction func signUpAction(sender: AnyObject) {
-        
+        let url = NSURL(string: ConnectionClient.UdacityAPI.RegistrationUrl)!
+        UIApplication.sharedApplication().openURL(url)
         
     }
     
@@ -68,6 +79,33 @@ class LoginViewController: UIViewController {
     private func showAlertWith(message: String!) {
         let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+    }
+    
+    private func handleLoginResult(type: Int!, result: AnyObject!, error: String!) {
+        
+        // dismiss the loading alert
+        dispatch_async(dispatch_get_main_queue(), {
+            self.loadingDialog.dismissLoading()
+        })
+        
+        // handle the result
+        if let status = result as? Bool where status {
+            
+            ConnectionClient.UserLogin.loginType = type
+            dispatch_async(dispatch_get_main_queue(), {
+                self.usernameTextField.text = ""
+                self.passwordTextField.text = ""
+                
+                // move to the next screen
+                let controller = self.storyboard!.instantiateViewControllerWithIdentifier("AppTabBarController") as! UITabBarController
+                self.presentViewController(controller, animated: true, completion: nil)
+            })
+        } else {
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                self.showAlertWith(error)
+            })
+        }
     }
 
 }
