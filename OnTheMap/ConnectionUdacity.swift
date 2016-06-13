@@ -126,6 +126,9 @@ extension ConnectionClient {
         }
     }
     
+    //MARK: -
+    //MARK: Private functions
+    
     // Handle the POST method response
     private func handleRequest(result: AnyObject!, error: NSError?, completionHandler: (result: AnyObject!, error: String?) -> Void) {
         if let json = result as? [String: AnyObject] {
@@ -147,10 +150,19 @@ extension ConnectionClient {
                 // save the account key
                 UserLogin.accountKey = account[UdacityAPI.TagKey] as? String
                 
+                guard let session = json[UdacityAPI.TagSession] as? [String:AnyObject] else {
+                    completionHandler(result: false, error: "Failed to login")
+                    return
+                }
+                
+                // save the session id
+                UserLogin.sessionId = session[UdacityAPI.TagId] as? String
+                
                 // get the user information
                 udacityGetUserInformation(completionHandler)
                 
             }
+            
         } else {
             completionHandler(result: false, error: "Failed to login!")
         }

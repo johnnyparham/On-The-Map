@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     
     
     //MARK: -
-    //MARK: Action Functions
+    //MARK: Action functions
     
     // Login using the Udacity API
     @IBAction func loginAction(sender: AnyObject) {
@@ -55,9 +55,32 @@ class LoginViewController: UIViewController {
     // Login using the Facebook API
     @IBAction func loginWithFacebook(sender: AnyObject) {
         
+        loadingDialog.showLoading(view)
+        
+        // facebook access permission array
+        let permissions = ["public_profile", "email"]
+        
+        ConnectionClient.sharedInstance().facebookManager.loginBehavior = FBSDKLoginBehavior.Web
+        ConnectionClient.sharedInstance().facebookManager.logInWithReadPermissions(permissions, fromViewController: self) {
+            (result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
+            
+            guard error == nil else {
+                self.showAlertWith("Failed to login to FaceBook")
+                return
+            }
+            // get the token
+            if result.token != nil {
+                
+                ConnectionClient.sharedInstance().udacityLoginWithFacebook(result.token.tokenString) {
+                     (result, error) in
+                    self.handleLoginResult(ConnectionClient.UdacityAPI.LoginFacebook, result: result, error: error)
+                }
+            } else {
+                self.loadingDialog.dismissLoading()
+            }
+        }
+        
     }
-    
-    
     
     
     // Sign up on the Udacity registration site

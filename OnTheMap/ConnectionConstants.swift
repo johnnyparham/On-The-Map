@@ -73,12 +73,12 @@ extension ConnectionClient {
         static let TagFirstName: String = "firstName"
         static let TagLastName: String = "lastName"
         static let TagLatitude: String = "latitude"
-        static let TagLongitude: String = "logitude"
+        static let TagLongitude: String = "longitude"
         static let TagMapString: String = "mapString"
         static let TagMediaURL: String = "mediaURL"
         static let TagObjectId: String = "objectId"
         static let TagUniqueKey: String = "uniqueKey"
-        static let TagUpdateAt: String = "updatedAt"
+        static let TagUpdatedAt: String = "updatedAt"
     }
     
 }

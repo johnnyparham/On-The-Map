@@ -15,6 +15,15 @@
 		133657861D0B5EA30000B83D /* ConnectionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657851D0B5EA30000B83D /* ConnectionConstants.swift */; };
 		133657881D0B69560000B83D /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657871D0B69560000B83D /* LoadingDialog.swift */; };
 		1336578A1D0B85250000B83D /* ConnectionUdacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657891D0B85250000B83D /* ConnectionUdacity.swift */; };
+		1336578C1D0DB6340000B83D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336578B1D0DB6340000B83D /* MapViewController.swift */; };
+		1336578E1D0DB7ED0000B83D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336578D1D0DB7ED0000B83D /* BaseViewController.swift */; };
+		133657901D0DC9340000B83D /* InformationPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336578F1D0DC9340000B83D /* InformationPostingViewController.swift */; };
+		133657921D0DCC400000B83D /* InformationTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657911D0DCC400000B83D /* InformationTextViewDelegate.swift */; };
+		133657941D0DD4EE0000B83D /* PinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657931D0DD4EE0000B83D /* PinListViewController.swift */; };
+		1336579D1D0DDEC30000B83D /* ConnectionParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336579C1D0DDEC30000B83D /* ConnectionParse.swift */; };
+		133657A01D0DEAD10000B83D /* StudentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336579F1D0DEAD10000B83D /* StudentManager.swift */; };
+		133657A21D0DEE370000B83D /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657A11D0DEE370000B83D /* StudentLocation.swift */; };
+		133657A41D0DF66C0000B83D /* PinListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133657A31D0DF66C0000B83D /* PinListTableViewCell.swift */; };
 		13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */; };
 		13FB0AC21D08AE4B00EF37A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */; };
 		13FB0AC41D08AE4B00EF37A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */; };
@@ -32,6 +41,15 @@
 		133657851D0B5EA30000B83D /* ConnectionConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionConstants.swift; sourceTree = "<group>"; };
 		133657871D0B69560000B83D /* LoadingDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
 		133657891D0B85250000B83D /* ConnectionUdacity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionUdacity.swift; sourceTree = "<group>"; };
+		1336578B1D0DB6340000B83D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1336578D1D0DB7ED0000B83D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1336578F1D0DC9340000B83D /* InformationPostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationPostingViewController.swift; sourceTree = "<group>"; };
+		133657911D0DCC400000B83D /* InformationTextViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationTextViewDelegate.swift; sourceTree = "<group>"; };
+		133657931D0DD4EE0000B83D /* PinListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinListViewController.swift; sourceTree = "<group>"; };
+		1336579C1D0DDEC30000B83D /* ConnectionParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionParse.swift; sourceTree = "<group>"; };
+		1336579F1D0DEAD10000B83D /* StudentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentManager.swift; sourceTree = "<group>"; };
+		133657A11D0DEE370000B83D /* StudentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		133657A31D0DF66C0000B83D /* PinListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinListTableViewCell.swift; sourceTree = "<group>"; };
 		13FB0AB91D08AE4B00EF37A1 /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13FB0AC11D08AE4B00EF37A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +73,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133657951D0DD79F0000B83D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1336577A1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift */,
+				133657911D0DCC400000B83D /* InformationTextViewDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		133657961D0DD7EC0000B83D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				133657871D0B69560000B83D /* LoadingDialog.swift */,
+				133657A31D0DF66C0000B83D /* PinListTableViewCell.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		133657971D0DD8460000B83D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1336579E1D0DEAA80000B83D /* Student */,
+				133657891D0B85250000B83D /* ConnectionUdacity.swift */,
+				133657831D0B4C240000B83D /* ConnectionClient.swift */,
+				133657851D0B5EA30000B83D /* ConnectionConstants.swift */,
+				1336579C1D0DDEC30000B83D /* ConnectionParse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		133657981D0DD8F90000B83D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				133657991D0DD9240000B83D /* Login */,
+				1336579A1D0DD9380000B83D /* Map and Tab */,
+				1336579B1D0DD9930000B83D /* Post Information */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		133657991D0DD9240000B83D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				13FB0ACE1D08B2B600EF37A1 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1336579A1D0DD9380000B83D /* Map and Tab */ = {
+			isa = PBXGroup;
+			children = (
+				1336578B1D0DB6340000B83D /* MapViewController.swift */,
+				133657931D0DD4EE0000B83D /* PinListViewController.swift */,
+				1336578D1D0DB7ED0000B83D /* BaseViewController.swift */,
+			);
+			name = "Map and Tab";
+			sourceTree = "<group>";
+		};
+		1336579B1D0DD9930000B83D /* Post Information */ = {
+			isa = PBXGroup;
+			children = (
+				1336578F1D0DC9340000B83D /* InformationPostingViewController.swift */,
+			);
+			name = "Post Information";
+			sourceTree = "<group>";
+		};
+		1336579E1D0DEAA80000B83D /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				1336579F1D0DEAD10000B83D /* StudentManager.swift */,
+				133657A11D0DEE370000B83D /* StudentLocation.swift */,
+			);
+			name = Student;
+			sourceTree = "<group>";
+		};
 		13FB0AB01D08AE4A00EF37A1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,17 +171,15 @@
 		13FB0ABB1D08AE4B00EF37A1 /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
-				133657831D0B4C240000B83D /* ConnectionClient.swift */,
 				13FB0ABC1D08AE4B00EF37A1 /* AppDelegate.swift */,
-				13FB0ACE1D08B2B600EF37A1 /* LoginViewController.swift */,
-				1336577A1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift */,
-				133657851D0B5EA30000B83D /* ConnectionConstants.swift */,
+				133657981D0DD8F90000B83D /* Controller */,
+				133657971D0DD8460000B83D /* Model */,
+				133657961D0DD7EC0000B83D /* Custom */,
+				133657951D0DD79F0000B83D /* Delegates */,
 				13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */,
 				13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */,
 				13FB0AC51D08AE4B00EF37A1 /* LaunchScreen.storyboard */,
 				13FB0AC81D08AE4B00EF37A1 /* Info.plist */,
-				133657871D0B69560000B83D /* LoadingDialog.swift */,
-				133657891D0B85250000B83D /* ConnectionUdacity.swift */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
@@ -167,10 +258,19 @@
 				133657841D0B4C240000B83D /* ConnectionClient.swift in Sources */,
 				13FB0ACF1D08B2B600EF37A1 /* LoginViewController.swift in Sources */,
 				13FB0ABD1D08AE4B00EF37A1 /* AppDelegate.swift in Sources */,
+				133657A21D0DEE370000B83D /* StudentLocation.swift in Sources */,
 				1336578A1D0B85250000B83D /* ConnectionUdacity.swift in Sources */,
 				133657861D0B5EA30000B83D /* ConnectionConstants.swift in Sources */,
+				1336578E1D0DB7ED0000B83D /* BaseViewController.swift in Sources */,
+				1336579D1D0DDEC30000B83D /* ConnectionParse.swift in Sources */,
+				133657921D0DCC400000B83D /* InformationTextViewDelegate.swift in Sources */,
+				133657901D0DC9340000B83D /* InformationPostingViewController.swift in Sources */,
+				133657A01D0DEAD10000B83D /* StudentManager.swift in Sources */,
+				133657A41D0DF66C0000B83D /* PinListTableViewCell.swift in Sources */,
+				133657941D0DD4EE0000B83D /* PinListViewController.swift in Sources */,
 				133657881D0B69560000B83D /* LoadingDialog.swift in Sources */,
 				1336577B1D08BD0E0000B83D /* CredentialsTextFieldDelegate.swift in Sources */,
+				1336578C1D0DB6340000B83D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
