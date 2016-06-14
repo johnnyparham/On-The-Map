@@ -32,6 +32,7 @@ class PinListViewController: BaseViewController, UITableViewDelegate, UITableVie
                     self.actvityView.hidden = true
                     self.showAlertWith(error)
                 }
+                
             } else {
                 dispatch_async(dispatch_get_main_queue()) {
                     self.actvityView.hidden = true
@@ -41,8 +42,6 @@ class PinListViewController: BaseViewController, UITableViewDelegate, UITableVie
             }
             
         }
-        
-        
         
     }
     
@@ -80,6 +79,7 @@ class PinListViewController: BaseViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         let studentLocation = StudentManager.sharedInstance().studentArray[indexPath.row]
         
         if studentLocation.mediaURL != nil {

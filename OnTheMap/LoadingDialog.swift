@@ -18,6 +18,7 @@ class LoadingDialog {
     
     // show the loading dialog
     func showLoading(view: UIView!) {
+        
         container = UIView()
         container.hidden = false
         container.frame = view.frame
@@ -36,7 +37,7 @@ class LoadingDialog {
         actInd.center = CGPointMake(loadingView.frame.size.width / 2, loadingView.frame.size.height / 2);
         
         loadingView.addSubview(actInd)
-        container.addSubview(actInd)
+        container.addSubview(loadingView)
         view.addSubview(container)
         
         actInd.startAnimating()

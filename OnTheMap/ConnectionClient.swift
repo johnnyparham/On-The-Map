@@ -35,7 +35,7 @@ class ConnectionClient: NSObject {
     
     //MARK: -
     //MARK: POST Method
-    func doPOSTWithMethod(method: String!, ofBaseUrl baseUrl: String!, withRequestContent content: [String:String], andWithBody body: String!, isFromUdacity isUdacity: Bool?, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
+    func doPOSTwithMethod(method: String!, ofBaseUrl baseUrl: String!, withRequestContent content: [String:String], andWithBody body: String!, isFromUdacity isUdacity: Bool?, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let urlString = baseUrl + method
         let url = NSURL(string: urlString)
@@ -74,12 +74,13 @@ class ConnectionClient: NSObject {
             
             // send the response to be handled outside
             completionHandler(result: json, error: nil)
+            
         }.resume()
     }
     
     //MARK: -
     //MARK: GET Method
-    func doGETWithMethod(method: String!, ofBaseUrl baseUrl: String!, withRequestContent content: [String:String], isFromUdacity isUdacity: Bool?, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
+    func doGETwithMethod(method: String!, ofBaseUrl baseUrl: String!, withRequestContent content: [String:String], isFromUdacity isUdacity: Bool?, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let urlString = baseUrl + method
         let url = NSURL(string: urlString)
@@ -120,7 +121,7 @@ class ConnectionClient: NSObject {
     
     //MARK: -
     //MARK: DELETE Method
-    func doDELETEWithMethod(method: String!, ofBaseUrl baseUrl: String!, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
+    func doDELETEwithMethod(method: String!, ofBaseUrl baseUrl: String!, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
         
         let urlString = baseUrl + method
         let url = NSURL(string: urlString)

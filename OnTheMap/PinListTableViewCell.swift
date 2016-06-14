@@ -17,7 +17,7 @@ class PinListTableViewCell: UITableViewCell {
     func setContentWith(firstName: String!, andLastName lastName: String!, andLocal local: String!, andLatitude latitude: Double!, andLongitude longitude: Double!) {
         studentName.text = firstName + " " + lastName
         studentLocal.text = local
-        studentCoordinates.text = "Lat: \(latitude) lon: \(longitude)"
+        studentCoordinates.text = "Lat: \(latitude) Lon: \(longitude)"
     }
 
 }

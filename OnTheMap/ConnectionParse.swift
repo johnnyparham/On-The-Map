@@ -31,12 +31,13 @@ extension ConnectionClient {
         let method = ParseAPI.StudentLocationMethod + formatParameters(parameters)
         
     
-    doGETWithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, isFromUdacity: false) { (result, error) in
+    doGETwithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, isFromUdacity: false) { (result, error) in
     
         // parsing the JSON
         if let json = result as? [String:AnyObject] {
+            
             guard let array = json[ParseAPI.TagResults] as? [[String:AnyObject]] else {
-                completionHandler(result: false, error: "Failed to get student location list!")
+                completionHandler(result: false, error: "Failed to get student location list")
                 return
             }
             
@@ -49,13 +50,14 @@ extension ConnectionClient {
                 
                 // add to the array
                 StudentManager.sharedInstance().studentArray.append(student)
+                
                 }
             
                 // send the success response
                 completionHandler(result: true, error: nil)
             
             } else {
-                completionHandler(result: false, error: "Failed to get student location list!")
+                completionHandler(result: false, error: "Failed to get student location list")
             }
         }
     }
@@ -74,9 +76,9 @@ extension ConnectionClient {
         let baseUrl = ParseAPI.BaseUrl
         let method = ParseAPI.StudentLocationMethod
         
-        let body = "{\"uniqueKey\": \"|(student.uniqueKey!)\", \"firstName\": \"|(student.firstName!)\", \"lastName\": \"\(student.lastName!)\", \"mapString\": \"\(student.mapString!)\", \"mediaURL\": \"\(student.mediaURL!)\", \"latitude\": \(student.latitude!), \"longitude\": \(student.longitude!)}"
+        let body = "{\"uniqueKey\": \"\(student.uniqueKey!)\", \"firstName\": \"\(student.firstName!)\", \"lastName\": \"\(student.lastName!)\", \"mapString\": \"\(student.mapString!)\", \"mediaURL\": \"\(student.mediaURL!)\", \"latitude\": \(student.latitude!), \"longitude\": \(student.longitude!)}"
         
-        doPOSTWithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, andWithBody: body, isFromUdacity: false) { (result, error) in
+        doPOSTwithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, andWithBody: body, isFromUdacity: false) { (result, error) in
             
             // parsing the JSON
             if let json = result as? [String:AnyObject] {

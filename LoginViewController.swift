@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
             (result: FBSDKLoginManagerLoginResult!, error: NSError!) -> Void in
             
             guard error == nil else {
-                self.showAlertWith("Failed to login to FaceBook")
+                self.showAlertWith("Failed to login into FaceBook")
                 return
             }
             // get the token

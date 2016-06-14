@@ -23,7 +23,7 @@ extension ConnectionClient {
             UdacityAPI.RequestParamContentType : UdacityAPI.ContentJSON
         ]
         
-        doGETWithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, isFromUdacity: true) { (result, error) in
+        doGETwithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, isFromUdacity: true) { (result, error) in
             
             if let json = result as? [String:AnyObject] {
                 
@@ -44,6 +44,7 @@ extension ConnectionClient {
                     // complete the process
                     completionHandler(result: true, error: nil)
                 }
+                
             } else {
                 completionHandler(result: false, error: "Failed to get user information")
             }
@@ -65,7 +66,7 @@ extension ConnectionClient {
             UdacityAPI.RequestParamContentType : UdacityAPI.ContentJSON
         ]
         
-        doPOSTWithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, andWithBody: body, isFromUdacity: true) { (result, error) in
+        doPOSTwithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, andWithBody: body, isFromUdacity: true) { (result, error) in
             self.handleRequest(result, error: error, completionHandler: completionHandler)
         }
         
@@ -81,10 +82,11 @@ extension ConnectionClient {
         let method: String = ConnectionClient.UdacityAPI.SessionMethod
         
         let requestContent = [
-            UdacityAPI.RequestParamAccept : UdacityAPI.ContentJSON, UdacityAPI.RequestParamContentType : UdacityAPI.ContentJSON
+            UdacityAPI.RequestParamAccept : UdacityAPI.ContentJSON,
+            UdacityAPI.RequestParamContentType : UdacityAPI.ContentJSON
         ]
         
-        doPOSTWithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, andWithBody: body, isFromUdacity: true) { (result, error) in
+        doPOSTwithMethod(method, ofBaseUrl: baseUrl, withRequestContent: requestContent, andWithBody: body, isFromUdacity: true) { (result, error) in
             self.handleRequest(result, error: error, completionHandler: completionHandler)
             
         }
@@ -98,7 +100,7 @@ extension ConnectionClient {
             let baseUrl: String = ConnectionClient.UdacityAPI.BaseUrl
             let method: String = ConnectionClient.UdacityAPI.SessionMethod
             
-            doDELETEWithMethod(method, ofBaseUrl: baseUrl) { (result, error) in
+            doDELETEwithMethod(method, ofBaseUrl: baseUrl) { (result, error) in
                 
                 if let json = result as? [String:AnyObject] {
                     
@@ -164,7 +166,7 @@ extension ConnectionClient {
             }
             
         } else {
-            completionHandler(result: false, error: "Failed to login!")
+            completionHandler(result: false, error: "Failed to login")
         }
     }
 
