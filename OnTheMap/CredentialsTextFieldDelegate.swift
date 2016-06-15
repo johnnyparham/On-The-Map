@@ -46,7 +46,7 @@ class CredentialsTextFieldDelegate: NSObject, UITextFieldDelegate {
         return keyboardSize.CGRectValue().height
     }
     
-    // change the size of the view to move up when the keyboard disappears
+    // change the size of the view to move down when the keyboard disappears
     func keyboardWillDismiss(notification: NSNotification)  {
         container.frame.origin.y = 0
     }
@@ -56,6 +56,7 @@ class CredentialsTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     private func subscribeToKeyboardNotification() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CredentialsTextFieldDelegate.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CredentialsTextFieldDelegate.keyboardWillDismiss(_:)), name: UIKeyboardWillHideNotification, object: nil)
     }
     
     // remove the observer from the notification center

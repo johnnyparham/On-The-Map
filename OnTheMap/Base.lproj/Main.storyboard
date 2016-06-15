@@ -100,17 +100,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="365-EE-vXn" userLabel="Username Text Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="365-EE-vXn" userLabel="Username Text Field">
                                 <rect key="frame" x="20" y="347" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fvI-Vc-wpp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-80-dOa" userLabel="Password Text Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-80-dOa" userLabel="Password Text Field">
                                 <rect key="frame" x="20" y="395" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qkg-tF-yup"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjh-C0-Qud" userLabel="Login">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjh-C0-Qud" userLabel="Login">
                                 <rect key="frame" x="20" y="439" width="560" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Login"/>
@@ -148,29 +154,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="trD-Ci-IfE" firstAttribute="top" secondItem="eax-JG-bur" secondAttribute="bottom" constant="35" id="40g-QO-cII"/>
-                            <constraint firstItem="dpY-mh-tdR" firstAttribute="top" secondItem="Rnc-t2-jUg" secondAttribute="bottom" constant="16" id="7Hh-VO-ACQ"/>
-                            <constraint firstItem="wn3-9P-Go5" firstAttribute="centerX" secondItem="365-EE-vXn" secondAttribute="centerX" id="BN6-0V-dSC"/>
-                            <constraint firstItem="Jjh-C0-Qud" firstAttribute="leading" secondItem="oW6-ip-jTU" secondAttribute="leading" id="Kb9-if-ApW"/>
-                            <constraint firstItem="365-EE-vXn" firstAttribute="trailing" secondItem="eS3-80-dOa" secondAttribute="trailing" id="KuZ-hr-ZCr"/>
-                            <constraint firstItem="365-EE-vXn" firstAttribute="leading" secondItem="eS3-80-dOa" secondAttribute="leading" id="Oxn-m5-ngw"/>
-                            <constraint firstItem="wn3-9P-Go5" firstAttribute="top" secondItem="Qzu-9V-xRB" secondAttribute="bottom" constant="24" id="Rv9-iI-blL"/>
-                            <constraint firstItem="eS3-80-dOa" firstAttribute="trailing" secondItem="Jjh-C0-Qud" secondAttribute="trailing" id="U07-Pe-8Op"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="aGL-G2-Ns8" secondAttribute="leadingMargin" id="Uvv-rN-y2z"/>
-                            <constraint firstItem="oW6-ip-jTU" firstAttribute="trailing" secondItem="eax-JG-bur" secondAttribute="trailing" id="ZM2-lt-Fav"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="aGL-G2-Ns8" secondAttribute="trailingMargin" id="c5i-VU-ctm"/>
-                            <constraint firstItem="oW6-ip-jTU" firstAttribute="top" secondItem="Jjh-C0-Qud" secondAttribute="bottom" constant="13" id="cEi-hI-nFc"/>
-                            <constraint firstItem="Jjh-C0-Qud" firstAttribute="trailing" secondItem="oW6-ip-jTU" secondAttribute="trailing" id="ejb-EU-iKz"/>
-                            <constraint firstItem="eS3-80-dOa" firstAttribute="top" secondItem="365-EE-vXn" secondAttribute="bottom" constant="18" id="h2Y-yQ-Ire"/>
-                            <constraint firstItem="Jjh-C0-Qud" firstAttribute="top" secondItem="eS3-80-dOa" secondAttribute="bottom" constant="14" id="hm4-3X-WQs"/>
-                            <constraint firstItem="oW6-ip-jTU" firstAttribute="leading" secondItem="eax-JG-bur" secondAttribute="leading" id="n5I-3F-F2o"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="top" secondItem="dpY-mh-tdR" secondAttribute="bottom" constant="16" id="qe3-pU-FHM"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="365-EE-vXn" secondAttribute="leading" id="spo-OM-tGI"/>
-                            <constraint firstItem="dpY-mh-tdR" firstAttribute="centerX" secondItem="Qzu-9V-xRB" secondAttribute="centerX" id="v6A-ei-Dem"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="365-EE-vXn" secondAttribute="trailing" id="vyE-cw-0lA"/>
-                            <constraint firstItem="eS3-80-dOa" firstAttribute="leading" secondItem="Jjh-C0-Qud" secondAttribute="leading" id="whT-cs-70p"/>
-                            <constraint firstItem="eax-JG-bur" firstAttribute="top" secondItem="oW6-ip-jTU" secondAttribute="bottom" constant="23" id="y7Z-DR-BSt"/>
-                            <constraint firstItem="365-EE-vXn" firstAttribute="top" secondItem="wn3-9P-Go5" secondAttribute="bottom" constant="19" id="z2p-W5-TcJ"/>
+                            <constraint firstItem="dpY-mh-tdR" firstAttribute="top" secondItem="Rnc-t2-jUg" secondAttribute="bottom" constant="16" id="0TZ-Cf-yrO"/>
+                            <constraint firstItem="dpY-mh-tdR" firstAttribute="centerX" secondItem="Qzu-9V-xRB" secondAttribute="centerX" id="0gB-fc-C9y"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="365-EE-vXn" secondAttribute="trailing" id="6Zw-Dm-N4D"/>
+                            <constraint firstItem="wn3-9P-Go5" firstAttribute="centerX" secondItem="365-EE-vXn" secondAttribute="centerX" id="70v-oK-NfK"/>
+                            <constraint firstItem="Jjh-C0-Qud" firstAttribute="trailing" secondItem="oW6-ip-jTU" secondAttribute="trailing" id="7Ti-vi-1HH"/>
+                            <constraint firstItem="Jjh-C0-Qud" firstAttribute="top" secondItem="eS3-80-dOa" secondAttribute="bottom" constant="14" id="A8B-8Q-Bnz"/>
+                            <constraint firstItem="eax-JG-bur" firstAttribute="top" secondItem="oW6-ip-jTU" secondAttribute="bottom" constant="23" id="Ncz-wg-dWt"/>
+                            <constraint firstItem="eS3-80-dOa" firstAttribute="top" secondItem="365-EE-vXn" secondAttribute="bottom" constant="18" id="Poa-0Z-4AT"/>
+                            <constraint firstItem="oW6-ip-jTU" firstAttribute="top" secondItem="Jjh-C0-Qud" secondAttribute="bottom" constant="13" id="QRF-tr-Kpu"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="aGL-G2-Ns8" secondAttribute="leadingMargin" id="Qfx-bf-VRy"/>
+                            <constraint firstItem="eS3-80-dOa" firstAttribute="leading" secondItem="Jjh-C0-Qud" secondAttribute="leading" id="QrK-rR-M7k"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="365-EE-vXn" secondAttribute="leading" id="TA2-kf-4Lr"/>
+                            <constraint firstItem="trD-Ci-IfE" firstAttribute="top" secondItem="eax-JG-bur" secondAttribute="bottom" constant="35" id="TOY-eN-FmE"/>
+                            <constraint firstItem="oW6-ip-jTU" firstAttribute="trailing" secondItem="eax-JG-bur" secondAttribute="trailing" id="UEX-bm-nsH"/>
+                            <constraint firstItem="Jjh-C0-Qud" firstAttribute="leading" secondItem="oW6-ip-jTU" secondAttribute="leading" id="W6Y-k9-lj7"/>
+                            <constraint firstItem="365-EE-vXn" firstAttribute="top" secondItem="wn3-9P-Go5" secondAttribute="bottom" constant="19" id="XBO-G5-Ie7"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="aGL-G2-Ns8" secondAttribute="trailingMargin" id="bIK-2G-g7d"/>
+                            <constraint firstItem="365-EE-vXn" firstAttribute="leading" secondItem="eS3-80-dOa" secondAttribute="leading" id="c3N-Ur-B1R"/>
+                            <constraint firstItem="wn3-9P-Go5" firstAttribute="top" secondItem="Qzu-9V-xRB" secondAttribute="bottom" constant="24" id="c6s-ow-0Ob"/>
+                            <constraint firstItem="eS3-80-dOa" firstAttribute="trailing" secondItem="Jjh-C0-Qud" secondAttribute="trailing" id="eBc-1U-mKG"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="top" secondItem="dpY-mh-tdR" secondAttribute="bottom" constant="16" id="kyQ-Hm-aOg"/>
+                            <constraint firstItem="365-EE-vXn" firstAttribute="trailing" secondItem="eS3-80-dOa" secondAttribute="trailing" id="mvs-nb-iha"/>
+                            <constraint firstItem="oW6-ip-jTU" firstAttribute="leading" secondItem="eax-JG-bur" secondAttribute="leading" id="sMV-Jf-3fZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -199,7 +205,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PinListCell" rowHeight="111" id="Aqu-N2-0Xt" customClass="PinListTableViewCell" customModule="OnTheMap" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="111"/>
+                                        <rect key="frame" x="0.0" y="92" width="560" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aqu-N2-0Xt" id="0QX-9e-jEZ">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="110"/>
