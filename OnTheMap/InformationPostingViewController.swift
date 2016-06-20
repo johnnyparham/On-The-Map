@@ -21,7 +21,7 @@ class InformationPostingViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var findOnTheMapButton: UIButton!
     @IBOutlet weak var mapFindTextView: UITextView!
-    @IBOutlet weak var labelText: UILabel!
+    @IBOutlet weak var whereAreYouLabel: UILabel!
     
     //MARK: -
     //MARK: second part componets
@@ -29,6 +29,7 @@ class InformationPostingViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var submitButtonBorder: UIImageView!
+    @IBOutlet weak var enterWebsiteLable: UILabel!
     
     // Protocol reference
     var delegate: InformationPostingProtocol?
@@ -153,10 +154,11 @@ class InformationPostingViewController: UIViewController {
         mapView.hidden = true
         submitButton.hidden = true
         submitButtonBorder.hidden = true
+        enterWebsiteLable.hidden = true
         
         findOnTheMapButton.hidden = false
         mapFindTextView.hidden = false
-        labelText.hidden = false
+        whereAreYouLabel.hidden = false
     }
     
     private func showSecondContainer() {
@@ -164,13 +166,14 @@ class InformationPostingViewController: UIViewController {
         mapView.hidden = false
         submitButton.hidden = false
         submitButtonBorder.hidden = false
+        enterWebsiteLable.hidden = false
         
-        view.backgroundColor = addInfoTextView.backgroundColor
-        cancelButton.titleLabel?.textColor = UIColor.whiteColor()
+        //view.backgroundColor = addInfoTextView.backgroundColor
+        //cancelButton.titleLabel?.textColor = UIColor.whiteColor()
         
         findOnTheMapButton.hidden = true
         mapFindTextView.hidden = true
-        labelText.hidden = true
+        whereAreYouLabel.hidden = true
     }
     
     // show alert with custom message
