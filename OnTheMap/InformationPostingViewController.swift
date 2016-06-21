@@ -168,9 +168,6 @@ class InformationPostingViewController: UIViewController {
         submitButtonBorder.hidden = false
         enterWebsiteLable.hidden = false
         
-        //view.backgroundColor = addInfoTextView.backgroundColor
-        //cancelButton.titleLabel?.textColor = UIColor.whiteColor()
-        
         findOnTheMapButton.hidden = true
         mapFindTextView.hidden = true
         whereAreYouLabel.hidden = true
