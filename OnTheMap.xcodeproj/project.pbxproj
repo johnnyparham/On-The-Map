@@ -28,6 +28,8 @@
 		13FB0AC41D08AE4B00EF37A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */; };
 		13FB0AC71D08AE4B00EF37A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FB0AC51D08AE4B00EF37A1 /* LaunchScreen.storyboard */; };
 		13FB0ACF1D08B2B600EF37A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FB0ACE1D08B2B600EF37A1 /* LoginViewController.swift */; };
+		86279DE41D199BFA00DCA632 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86279DE31D199BFA00DCA632 /* FBSDKShareKit.framework */; };
+		86279DE61D199C1400DCA632 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86279DE51D199C1400DCA632 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		13FB0AC61D08AE4B00EF37A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13FB0AC81D08AE4B00EF37A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13FB0ACE1D08B2B600EF37A1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		86279DE31D199BFA00DCA632 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
+		86279DE51D199C1400DCA632 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			files = (
 				1336577F1D0B30170000B83D /* FBSDKLoginKit.framework in Frameworks */,
 				1336577D1D0B2FE90000B83D /* FBSDKCoreKit.framework in Frameworks */,
+				86279DE41D199BFA00DCA632 /* FBSDKShareKit.framework in Frameworks */,
+				86279DE61D199C1400DCA632 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				133657821D0B39E20000B83D /* Bridging-Header.h */,
+				86279DE51D199C1400DCA632 /* Bolts.framework */,
+				86279DE31D199BFA00DCA632 /* FBSDKShareKit.framework */,
 				1336577E1D0B30170000B83D /* FBSDKLoginKit.framework */,
 				1336577C1D0B2FE90000B83D /* FBSDKCoreKit.framework */,
 				13FB0ABB1D08AE4B00EF37A1 /* OnTheMap */,
@@ -172,12 +180,20 @@
 				133657971D0DD8460000B83D /* Model */,
 				133657961D0DD7EC0000B83D /* Custom */,
 				133657951D0DD79F0000B83D /* Delegates */,
-				13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */,
+				86279DE71D19A4CC00DCA632 /* View */,
 				13FB0AC31D08AE4B00EF37A1 /* Assets.xcassets */,
-				13FB0AC51D08AE4B00EF37A1 /* LaunchScreen.storyboard */,
 				13FB0AC81D08AE4B00EF37A1 /* Info.plist */,
 			);
 			path = OnTheMap;
+			sourceTree = "<group>";
+		};
+		86279DE71D19A4CC00DCA632 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13FB0AC01D08AE4B00EF37A1 /* Main.storyboard */,
+				13FB0AC51D08AE4B00EF37A1 /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController {
     
     //MARK: -
     //MARK: Components
@@ -32,31 +32,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         usernameTextField.delegate = textDelegate
         passwordTextField.delegate = textDelegate
         
-        if (FBSDKAccessToken.currentAccessToken() == nil) {
-            print("Not logged in")
-        } else {
-            print("Logged in")
-        }
-        
-        var loginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        loginButton.center = self.view.center
-        
-        loginButton.delegate = self
-        
-        self.view.addSubview(loginButton)
-    }
-    
-    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        if error == nil {
-            print("Login Complete")
-        } else {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        print("User logged out")
     }
     
     //MARK: -
@@ -155,5 +130,4 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             })
         }
     }
-
 }

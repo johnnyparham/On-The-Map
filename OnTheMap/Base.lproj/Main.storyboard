@@ -208,35 +208,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Icon_Udacity" translatesAutoresizingMaskIntoConstraints="NO" id="Qzu-9V-xRB">
-                                <rect key="frame" x="20" y="106" width="560" height="141"/>
+                                <rect key="frame" x="20" y="106" width="560" height="109"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="centerX" secondItem="dpY-mh-tdR" secondAttribute="centerX" id="0FL-CE-ClF"/>
                             <constraint firstItem="dpY-mh-tdR" firstAttribute="top" secondItem="Rnc-t2-jUg" secondAttribute="bottom" constant="16" id="0TZ-Cf-yrO"/>
+                            <constraint firstItem="wn3-9P-Go5" firstAttribute="top" secondItem="Qzu-9V-xRB" secondAttribute="bottom" constant="92" id="3zL-G8-zLQ"/>
                             <constraint firstItem="wn3-9P-Go5" firstAttribute="centerX" secondItem="365-EE-vXn" secondAttribute="centerX" id="70v-oK-NfK"/>
                             <constraint firstItem="Jjh-C0-Qud" firstAttribute="trailing" secondItem="oW6-ip-jTU" secondAttribute="trailing" id="7Ti-vi-1HH"/>
                             <constraint firstItem="Jjh-C0-Qud" firstAttribute="top" secondItem="eS3-80-dOa" secondAttribute="bottom" constant="14" id="A8B-8Q-Bnz"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="top" secondItem="dpY-mh-tdR" secondAttribute="bottom" constant="49" id="Ip5-iO-Vp6"/>
                             <constraint firstItem="eax-JG-bur" firstAttribute="top" secondItem="oW6-ip-jTU" secondAttribute="bottom" constant="23" id="Ncz-wg-dWt"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="365-EE-vXn" secondAttribute="trailing" id="PHa-uL-KAg"/>
                             <constraint firstItem="eS3-80-dOa" firstAttribute="top" secondItem="365-EE-vXn" secondAttribute="bottom" constant="18" id="Poa-0Z-4AT"/>
                             <constraint firstItem="oW6-ip-jTU" firstAttribute="top" secondItem="Jjh-C0-Qud" secondAttribute="bottom" constant="13" id="QRF-tr-Kpu"/>
                             <constraint firstItem="eS3-80-dOa" firstAttribute="leading" secondItem="Jjh-C0-Qud" secondAttribute="leading" id="QrK-rR-M7k"/>
                             <constraint firstItem="trD-Ci-IfE" firstAttribute="top" secondItem="eax-JG-bur" secondAttribute="bottom" constant="35" id="TOY-eN-FmE"/>
                             <constraint firstItem="oW6-ip-jTU" firstAttribute="trailing" secondItem="eax-JG-bur" secondAttribute="trailing" id="UEX-bm-nsH"/>
                             <constraint firstItem="Jjh-C0-Qud" firstAttribute="leading" secondItem="oW6-ip-jTU" secondAttribute="leading" id="W6Y-k9-lj7"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="365-EE-vXn" secondAttribute="leading" id="WbO-fW-66u"/>
                             <constraint firstItem="365-EE-vXn" firstAttribute="top" secondItem="wn3-9P-Go5" secondAttribute="bottom" constant="19" id="XBO-G5-Ie7"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="aGL-G2-Ns8" secondAttribute="leadingMargin" id="XoJ-D0-RyV"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="aGL-G2-Ns8" secondAttribute="trailingMargin" id="XuR-YV-ZdM"/>
                             <constraint firstItem="365-EE-vXn" firstAttribute="leading" secondItem="eS3-80-dOa" secondAttribute="leading" id="c3N-Ur-B1R"/>
                             <constraint firstItem="eS3-80-dOa" firstAttribute="trailing" secondItem="Jjh-C0-Qud" secondAttribute="trailing" id="eBc-1U-mKG"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="365-EE-vXn" secondAttribute="trailing" id="hcN-nu-3Pq"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="centerX" secondItem="dpY-mh-tdR" secondAttribute="centerX" id="k6R-AJ-BIx"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="365-EE-vXn" secondAttribute="leading" id="hGv-Fi-DgX"/>
+                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="top" secondItem="dpY-mh-tdR" secondAttribute="bottom" constant="49" id="ijr-k6-vcH"/>
                             <constraint firstItem="365-EE-vXn" firstAttribute="trailing" secondItem="eS3-80-dOa" secondAttribute="trailing" id="mvs-nb-iha"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="trailing" secondItem="aGL-G2-Ns8" secondAttribute="trailingMargin" id="quM-VZ-Zgn"/>
                             <constraint firstItem="oW6-ip-jTU" firstAttribute="leading" secondItem="eax-JG-bur" secondAttribute="leading" id="sMV-Jf-3fZ"/>
-                            <constraint firstItem="Qzu-9V-xRB" firstAttribute="leading" secondItem="aGL-G2-Ns8" secondAttribute="leadingMargin" id="wC2-gf-aHU"/>
-                            <constraint firstItem="wn3-9P-Go5" firstAttribute="top" secondItem="Qzu-9V-xRB" secondAttribute="bottom" constant="60" id="wXX-lv-9iu"/>
                         </constraints>
                     </view>
                     <connections>
