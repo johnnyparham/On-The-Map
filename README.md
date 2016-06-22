@@ -12,4 +12,8 @@ OnTheMap was developed to meet the specifications for the 3rd project in the Uda
 
 ` $ git clone https://github.com/johnnyparham/On-The-Map`
 
-*Step 2 - Open the project in Xcode
+*Step 2 - Open the project in Xcode*
+
+` $ open "OnTheMap.xcodeproj"`
+
+*Step 3 - Build the app in your simulator*
