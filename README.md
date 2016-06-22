@@ -17,3 +17,9 @@ OnTheMap was developed to meet the specifications for the 3rd project in the Uda
 ` $ open "OnTheMap.xcodeproj"`
 
 *Step 3 - Build the app in your simulator*
+
+## Prerequisites
+
+* Udacity [Login](www.udacity.com) or Facebook [Login](www.facebook.com)
+* Xcode 7
+* iOS 9
