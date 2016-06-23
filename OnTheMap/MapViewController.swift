@@ -17,7 +17,6 @@ class MapViewController: BaseViewController, MKMapViewDelegate, InformationPosti
     // Annotations array
     var annotations = [MKPointAnnotation]()
     
-    //MARK: -
     //MARK: Lifecycle functions
     
     override func viewDidLoad() {
@@ -27,7 +26,6 @@ class MapViewController: BaseViewController, MKMapViewDelegate, InformationPosti
         
     }
     
-    //MARK: -
     //MARK: Actions
     
     @IBAction func refreshList(sender: AnyObject) {
@@ -41,7 +39,6 @@ class MapViewController: BaseViewController, MKMapViewDelegate, InformationPosti
         presentPostingView(self)
     }
     
-    //MARK: -
     //MARK: Private functions
     
     // load student location list

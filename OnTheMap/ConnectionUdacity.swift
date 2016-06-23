@@ -12,7 +12,6 @@ import Foundation
 
 extension ConnectionClient {
     
-    //MARK: -
     //MARK: Get user public information
     
     func udacityGetUserInformation(completionHandler: (result: AnyObject!, error: String?) -> Void) {
@@ -51,7 +50,6 @@ extension ConnectionClient {
         }
     }
     
-    //MARK: -
     //MARK: Login (Create a Session)
     
     func udacityLogin(username: String!, password: String!, completionHandler:
@@ -72,7 +70,6 @@ extension ConnectionClient {
         
     }
     
-    //MARK: -
     //MARK: Login with Facebook (Create a Session)
     
     func udacityLoginWithFacebook(accessToken: String!, completionHandler: (result: AnyObject!, error: String?) -> Void) {
@@ -92,7 +89,6 @@ extension ConnectionClient {
         }
     }
     
-    //MARK: - 
     //MARK: Logout
     
     func udacityLogout(completionHandler: (result: AnyObject!, error: String?) -> Void) {
@@ -128,7 +124,6 @@ extension ConnectionClient {
         }
     }
     
-    //MARK: -
     //MARK: Private functions
     
     // Handle the POST method response
@@ -169,5 +164,4 @@ extension ConnectionClient {
             completionHandler(result: false, error: "Failed to login")
         }
     }
-
 }

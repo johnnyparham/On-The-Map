@@ -12,7 +12,6 @@ import Foundation
 
 extension ConnectionClient {
     
-    //MARK: -
     //MARK: Get StudentLocations list
     
     func parseGetStudentLocations(completionHandler: (result: AnyObject!, error: String?) -> Void) {
@@ -62,7 +61,6 @@ extension ConnectionClient {
         }
     }
     
-    //MARK: -
     //MARK: Post Student location
     
     func parsePostStudentLocation(student: StudentLocation, completionHandler: (result: AnyObject!, error: String?) -> Void) {
@@ -105,7 +103,6 @@ extension ConnectionClient {
         
     }
     
-    //MARK: -
     //MARK: Help functions
     
     // convert a dictionary with the parameters to a string for a url

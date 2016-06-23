@@ -12,7 +12,6 @@ import Foundation
 
 class BaseViewController: UIViewController {
     
-    //MARK: -
     //MARK: Lifecycle functions
     
     override func viewDidLoad() {
@@ -22,7 +21,6 @@ class BaseViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(BaseViewController.logout))
     }
     
-    //MARK: -
     //MARK: Initiate the logout
     
     func logout() {

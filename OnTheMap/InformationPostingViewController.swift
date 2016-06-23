@@ -16,14 +16,12 @@ protocol InformationPostingProtocol {
 
 class InformationPostingViewController: UIViewController {
     
-    //MARK: -
     //MARK: first part components
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var findOnTheMapButton: UIButton!
     @IBOutlet weak var mapFindTextView: UITextView!
     @IBOutlet weak var whereAreYouLabel: UILabel!
     
-    //MARK: -
     //MARK: second part componets
     @IBOutlet weak var addInfoTextView: UITextView!
     @IBOutlet weak var mapView: MKMapView!
@@ -57,7 +55,6 @@ class InformationPostingViewController: UIViewController {
         showFirstContainer()
     }
     
-    //MARK: -
     //MARK: Action Functions
     
     @IBAction func cancel(sender: AnyObject) {
@@ -146,7 +143,6 @@ class InformationPostingViewController: UIViewController {
         }
     }
     
-    //MARK: -
     //MARK: Private functions
     
     private func showFirstContainer() {

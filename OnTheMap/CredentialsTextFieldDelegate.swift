@@ -29,8 +29,6 @@ class CredentialsTextFieldDelegate: NSObject, UITextFieldDelegate {
         return true
     }
 
-    
-    //MARK: -
     //MARK: keyboard layout functions
     
     // change the size of the view to move up when the keyboard appears

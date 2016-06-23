@@ -10,12 +10,10 @@ import Foundation
 
 class PinListViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, InformationPostingProtocol {
     
-    //MARK: -
     //MARK: Components
     @IBOutlet weak var pinTableView: UITableView!
     @IBOutlet weak var actvityView: UIActivityIndicatorView!
     
-    //MARK: -
     //MARK: Actions
     @IBAction func refreshList(sender: AnyObject) {
         StudentManager.sharedInstance().clean()
@@ -50,14 +48,12 @@ class PinListViewController: BaseViewController, UITableViewDelegate, UITableVie
         
     }
     
-    //MARK: -
     //MARK: Post delegate
     
     func submitDone() {
         refreshList("")
     }
     
-    //MARK: - 
     //MARK: TableView delegate functions
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
