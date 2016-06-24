@@ -1,6 +1,6 @@
 # OnTheMap
 
-OnTheMap is an iOS app developed in Swift 2 that posts user-generated location information to a shared map, pulling the locations of Udacity Nanodegree students, with custom messages about themselves or their learning experience.  The locations are listed as both a MapView and a ListView.
+OnTheMap is an iOS app developed in Swift 2.2 that posts user-generated location information to a shared map, pulling the locations of Udacity Nanodegree students, with custom messages about themselves or their learning experience.  The locations are listed as both a MapView and a ListView.
 
 This app allows the user to login using either their Undacity Login or Facebook Login credentials.
 
